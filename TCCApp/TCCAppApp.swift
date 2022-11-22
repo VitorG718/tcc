@@ -12,6 +12,8 @@ struct TCCAppApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+//                .frame(width: 2481, height: 1772)
+                .frame(minWidth: 800, minHeight: 400)
         }
     }
 }

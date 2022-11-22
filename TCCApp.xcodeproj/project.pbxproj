@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5082BBFF292CE3F600ADB865 /* DesignTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BBFE292CE3F600ADB865 /* DesignTokens.swift */; };
+		5082BC01292CF35700ADB865 /* ContentSideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BC00292CF35700ADB865 /* ContentSideBar.swift */; };
+		5082BC03292CF39200ADB865 /* ContentSectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BC02292CF39200ADB865 /* ContentSectionButton.swift */; };
+		5082BC07292CF3DF00ADB865 /* CGFloat+Metrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BC06292CF3DF00ADB865 /* CGFloat+Metrics.swift */; };
+		5082BC09292CF41700ADB865 /* Color+Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BC08292CF41700ADB865 /* Color+Token.swift */; };
 		50B7A79628D290E1003924B5 /* TCCAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B7A79528D290E1003924B5 /* TCCAppApp.swift */; };
 		50B7A79828D290E1003924B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B7A79728D290E1003924B5 /* ContentView.swift */; };
 		50B7A79A28D290E4003924B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50B7A79928D290E4003924B5 /* Assets.xcassets */; };
@@ -14,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5082BBFE292CE3F600ADB865 /* DesignTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTokens.swift; sourceTree = "<group>"; };
+		5082BC00292CF35700ADB865 /* ContentSideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSideBar.swift; sourceTree = "<group>"; };
+		5082BC02292CF39200ADB865 /* ContentSectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSectionButton.swift; sourceTree = "<group>"; };
+		5082BC06292CF3DF00ADB865 /* CGFloat+Metrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Metrics.swift"; sourceTree = "<group>"; };
+		5082BC08292CF41700ADB865 /* Color+Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Token.swift"; sourceTree = "<group>"; };
 		50B7A79228D290E1003924B5 /* TCCApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCCApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B7A79528D290E1003924B5 /* TCCAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCCAppApp.swift; sourceTree = "<group>"; };
 		50B7A79728D290E1003924B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +43,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5082BBFB292CE35C00ADB865 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5082BC05292CF3CF00ADB865 /* Extensions */,
+				5082BC04292CF3BC00ADB865 /* Tokens */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5082BBFC292CE36900ADB865 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5082BBFD292CE3C900ADB865 /* Content */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5082BBFD292CE3C900ADB865 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				50B7A79728D290E1003924B5 /* ContentView.swift */,
+				5082BC00292CF35700ADB865 /* ContentSideBar.swift */,
+				5082BC02292CF39200ADB865 /* ContentSectionButton.swift */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		5082BC04292CF3BC00ADB865 /* Tokens */ = {
+			isa = PBXGroup;
+			children = (
+				5082BBFE292CE3F600ADB865 /* DesignTokens.swift */,
+			);
+			path = Tokens;
+			sourceTree = "<group>";
+		};
+		5082BC05292CF3CF00ADB865 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5082BC06292CF3DF00ADB865 /* CGFloat+Metrics.swift */,
+				5082BC08292CF41700ADB865 /* Color+Token.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		50B7A78928D290E1003924B5 = {
 			isa = PBXGroup;
 			children = (
@@ -52,8 +106,9 @@
 		50B7A79428D290E1003924B5 /* TCCApp */ = {
 			isa = PBXGroup;
 			children = (
+				5082BBFC292CE36900ADB865 /* Views */,
+				5082BBFB292CE35C00ADB865 /* Utils */,
 				50B7A79528D290E1003924B5 /* TCCAppApp.swift */,
-				50B7A79728D290E1003924B5 /* ContentView.swift */,
 				50B7A79928D290E4003924B5 /* Assets.xcassets */,
 				50B7A79E28D290E4003924B5 /* TCCApp.entitlements */,
 				50B7A79B28D290E4003924B5 /* Preview Content */,
@@ -139,7 +194,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5082BC09292CF41700ADB865 /* Color+Token.swift in Sources */,
+				5082BC07292CF3DF00ADB865 /* CGFloat+Metrics.swift in Sources */,
+				5082BC03292CF39200ADB865 /* ContentSectionButton.swift in Sources */,
+				5082BC01292CF35700ADB865 /* ContentSideBar.swift in Sources */,
 				50B7A79828D290E1003924B5 /* ContentView.swift in Sources */,
+				5082BBFF292CE3F600ADB865 /* DesignTokens.swift in Sources */,
 				50B7A79628D290E1003924B5 /* TCCAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,12 +326,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TCCApp/TCCApp.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TCCApp/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -291,12 +354,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TCCApp/TCCApp.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TCCApp/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
