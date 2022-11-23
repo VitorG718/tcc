@@ -18,6 +18,7 @@ extension OwnSectionView {
                         .frame(height: .height(237, in: proxy, min: 100))
                 }
             }
+            .padding([.horizontal, .vertical], 5)
         }
     }
     

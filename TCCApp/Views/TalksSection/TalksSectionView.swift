@@ -17,7 +17,7 @@ struct TalksSectionView: View {
             firstSection: {
                 VStack(spacing: .zero) {
                     DefaultSectionView
-                        .createHeader("Discussões", toButtonTitle: "+ Criar", with: proxy)
+                        .createHeader("Discussões", with: proxy, hasButton: .use("+ Criar", {}))
                         .padding(.bottom, .height(50, in: proxy, min: 20))
                     
                     ScrollView(.horizontal, showsIndicators: false) {

@@ -27,24 +27,29 @@ struct DefaultSectionView<First: View, Second: View>: View {
 }
 
 extension DefaultSectionView where First == EmptyView, Second == EmptyView {
+    enum HeaderButton {
+        case noUse
+        case use(String, () -> Void)
+    }
     @ViewBuilder
     static func createHeader(
         _ title: String,
-        toButtonTitle buttonLabel: String,
         with proxy: GeometryProxy,
-        handler: @escaping () -> Void = { }
+        hasButton useButton: HeaderButton
     ) -> some View {
         HStack(spacing: .zero) {
-            Text(title)
+            Text(title.uppercased())
                 .font(.system(
-                    size: .height(32, in: proxy, min: 20),
+                    size: .height(32, in: proxy, min: 18),
                     weight: .medium
                 ))
                 .foregroundColor(.white)
             
             Spacer()
             
-            DefaultButton(title: buttonLabel, proxy: proxy, action: handler)
+            if case let .use(title, handler) = useButton {
+                DefaultButton(title: title, proxy: proxy, action: handler)
+            }
         }
     }
 }

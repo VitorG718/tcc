@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E68ECA6292EBEC1004B64D5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E68ECA5292EBEC1004B64D5 /* User.swift */; };
+		4E68ECA8292EBF0B004B64D5 /* TeamSectionView+Builders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E68ECA7292EBF0B004B64D5 /* TeamSectionView+Builders.swift */; };
 		5082BBFF292CE3F600ADB865 /* DesignTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BBFE292CE3F600ADB865 /* DesignTokens.swift */; };
 		5082BC01292CF35700ADB865 /* ContentSideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BC00292CF35700ADB865 /* ContentSideBar.swift */; };
 		5082BC03292CF39200ADB865 /* ContentSectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BC02292CF39200ADB865 /* ContentSectionButton.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E68ECA5292EBEC1004B64D5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4E68ECA7292EBF0B004B64D5 /* TeamSectionView+Builders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TeamSectionView+Builders.swift"; sourceTree = "<group>"; };
 		5082BBFE292CE3F600ADB865 /* DesignTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTokens.swift; sourceTree = "<group>"; };
 		5082BC00292CF35700ADB865 /* ContentSideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSideBar.swift; sourceTree = "<group>"; };
 		5082BC02292CF39200ADB865 /* ContentSectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSectionButton.swift; sourceTree = "<group>"; };
@@ -129,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				5082BC14292DA16300ADB865 /* TeamSectionView.swift */,
+				4E68ECA7292EBF0B004B64D5 /* TeamSectionView+Builders.swift */,
 			);
 			path = TeamSection;
 			sourceTree = "<group>";
@@ -170,6 +175,7 @@
 				5082BC24292DD85B00ADB865 /* Deadline.swift */,
 				5082C074292E6F4200ADB865 /* Filter.swift */,
 				5082C078292E6FB200ADB865 /* Talk.swift */,
+				4E68ECA5292EBEC1004B64D5 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -294,8 +300,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5082BC09292CF41700ADB865 /* Color+Token.swift in Sources */,
+				4E68ECA8292EBF0B004B64D5 /* TeamSectionView+Builders.swift in Sources */,
 				5082C075292E6F4200ADB865 /* Filter.swift in Sources */,
 				5082BC07292CF3DF00ADB865 /* CGFloat+Metrics.swift in Sources */,
+				4E68ECA6292EBEC1004B64D5 /* User.swift in Sources */,
 				5082C079292E6FB200ADB865 /* Talk.swift in Sources */,
 				5082BC03292CF39200ADB865 /* ContentSectionButton.swift in Sources */,
 				5082BC01292CF35700ADB865 /* ContentSideBar.swift in Sources */,

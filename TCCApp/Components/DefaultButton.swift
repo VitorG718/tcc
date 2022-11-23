@@ -18,12 +18,12 @@ struct DefaultButton: View {
             label: {
                 Text(title)
                     .font(.system(
-                        size: .height(24, in: proxy, min: 16),
+                        size: .height(24, in: proxy, min: 13),
                         weight: .regular
                     ))
                     .foregroundColor(.white)
-                    .padding(.horizontal, .width(30, in: proxy, min: 20))
-                    .padding(.vertical, .height(10, in: proxy, min: 8))
+                    .padding(.horizontal, .width(30, in: proxy, min: 18))
+                    .padding(.vertical, .height(10, in: proxy, min: 6))
             }
         )
         .buttonStyle(.borderless)
