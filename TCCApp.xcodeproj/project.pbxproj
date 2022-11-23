@@ -12,6 +12,18 @@
 		5082BC03292CF39200ADB865 /* ContentSectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BC02292CF39200ADB865 /* ContentSectionButton.swift */; };
 		5082BC07292CF3DF00ADB865 /* CGFloat+Metrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BC06292CF3DF00ADB865 /* CGFloat+Metrics.swift */; };
 		5082BC09292CF41700ADB865 /* Color+Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BC08292CF41700ADB865 /* Color+Token.swift */; };
+		5082BC15292DA16300ADB865 /* TeamSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BC14292DA16300ADB865 /* TeamSectionView.swift */; };
+		5082BC17292DA1E500ADB865 /* OwnSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BC16292DA1E500ADB865 /* OwnSectionView.swift */; };
+		5082BC19292DA1F000ADB865 /* TalksSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BC18292DA1F000ADB865 /* TalksSectionView.swift */; };
+		5082BC1C292DA23A00ADB865 /* DefaultSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BC1B292DA23A00ADB865 /* DefaultSectionView.swift */; };
+		5082BC1E292DA25400ADB865 /* UserButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BC1D292DA25400ADB865 /* UserButton.swift */; };
+		5082BC20292DA27500ADB865 /* ContentView+Builders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BC1F292DA27500ADB865 /* ContentView+Builders.swift */; };
+		5082BC22292DD80500ADB865 /* OwnSectionView+Builders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BC21292DD80500ADB865 /* OwnSectionView+Builders.swift */; };
+		5082BC25292DD85B00ADB865 /* Deadline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BC24292DD85B00ADB865 /* Deadline.swift */; };
+		5082BC29292DD8A600ADB865 /* DeadlineCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BC28292DD8A600ADB865 /* DeadlineCard.swift */; };
+		5082BC2B292DD8C300ADB865 /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BC2A292DD8C300ADB865 /* DefaultButton.swift */; };
+		5082BC2D292DDA1700ADB865 /* DeadlineCardUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BC2C292DDA1700ADB865 /* DeadlineCardUtils.swift */; };
+		5082BC2F292DDA3300ADB865 /* DeadlineCard+Builders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BC2E292DDA3300ADB865 /* DeadlineCard+Builders.swift */; };
 		50B7A79628D290E1003924B5 /* TCCAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B7A79528D290E1003924B5 /* TCCAppApp.swift */; };
 		50B7A79828D290E1003924B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B7A79728D290E1003924B5 /* ContentView.swift */; };
 		50B7A79A28D290E4003924B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50B7A79928D290E4003924B5 /* Assets.xcassets */; };
@@ -24,6 +36,18 @@
 		5082BC02292CF39200ADB865 /* ContentSectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSectionButton.swift; sourceTree = "<group>"; };
 		5082BC06292CF3DF00ADB865 /* CGFloat+Metrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Metrics.swift"; sourceTree = "<group>"; };
 		5082BC08292CF41700ADB865 /* Color+Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Token.swift"; sourceTree = "<group>"; };
+		5082BC14292DA16300ADB865 /* TeamSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamSectionView.swift; sourceTree = "<group>"; };
+		5082BC16292DA1E500ADB865 /* OwnSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnSectionView.swift; sourceTree = "<group>"; };
+		5082BC18292DA1F000ADB865 /* TalksSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalksSectionView.swift; sourceTree = "<group>"; };
+		5082BC1B292DA23A00ADB865 /* DefaultSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSectionView.swift; sourceTree = "<group>"; };
+		5082BC1D292DA25400ADB865 /* UserButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserButton.swift; sourceTree = "<group>"; };
+		5082BC1F292DA27500ADB865 /* ContentView+Builders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView+Builders.swift"; sourceTree = "<group>"; };
+		5082BC21292DD80500ADB865 /* OwnSectionView+Builders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OwnSectionView+Builders.swift"; sourceTree = "<group>"; };
+		5082BC24292DD85B00ADB865 /* Deadline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deadline.swift; sourceTree = "<group>"; };
+		5082BC28292DD8A600ADB865 /* DeadlineCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadlineCard.swift; sourceTree = "<group>"; };
+		5082BC2A292DD8C300ADB865 /* DefaultButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
+		5082BC2C292DDA1700ADB865 /* DeadlineCardUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadlineCardUtils.swift; sourceTree = "<group>"; };
+		5082BC2E292DDA3300ADB865 /* DeadlineCard+Builders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeadlineCard+Builders.swift"; sourceTree = "<group>"; };
 		50B7A79228D290E1003924B5 /* TCCApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCCApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B7A79528D290E1003924B5 /* TCCAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCCAppApp.swift; sourceTree = "<group>"; };
 		50B7A79728D290E1003924B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +79,9 @@
 		5082BBFC292CE36900ADB865 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5082BC13292DA14F00ADB865 /* TalksSection */,
+				5082BC12292DA14600ADB865 /* OwnSection */,
+				5082BC11292DA13D00ADB865 /* TeamSection */,
 				5082BBFD292CE3C900ADB865 /* Content */,
 			);
 			path = Views;
@@ -66,6 +93,7 @@
 				50B7A79728D290E1003924B5 /* ContentView.swift */,
 				5082BC00292CF35700ADB865 /* ContentSideBar.swift */,
 				5082BC02292CF39200ADB865 /* ContentSectionButton.swift */,
+				5082BC1F292DA27500ADB865 /* ContentView+Builders.swift */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -87,6 +115,60 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		5082BC11292DA13D00ADB865 /* TeamSection */ = {
+			isa = PBXGroup;
+			children = (
+				5082BC14292DA16300ADB865 /* TeamSectionView.swift */,
+			);
+			path = TeamSection;
+			sourceTree = "<group>";
+		};
+		5082BC12292DA14600ADB865 /* OwnSection */ = {
+			isa = PBXGroup;
+			children = (
+				5082BC16292DA1E500ADB865 /* OwnSectionView.swift */,
+				5082BC21292DD80500ADB865 /* OwnSectionView+Builders.swift */,
+			);
+			path = OwnSection;
+			sourceTree = "<group>";
+		};
+		5082BC13292DA14F00ADB865 /* TalksSection */ = {
+			isa = PBXGroup;
+			children = (
+				5082BC18292DA1F000ADB865 /* TalksSectionView.swift */,
+			);
+			path = TalksSection;
+			sourceTree = "<group>";
+		};
+		5082BC1A292DA22500ADB865 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5082BC26292DD89500ADB865 /* DeadlineCard */,
+				5082BC1B292DA23A00ADB865 /* DefaultSectionView.swift */,
+				5082BC1D292DA25400ADB865 /* UserButton.swift */,
+				5082BC2A292DD8C300ADB865 /* DefaultButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5082BC23292DD84800ADB865 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5082BC24292DD85B00ADB865 /* Deadline.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5082BC26292DD89500ADB865 /* DeadlineCard */ = {
+			isa = PBXGroup;
+			children = (
+				5082BC28292DD8A600ADB865 /* DeadlineCard.swift */,
+				5082BC2C292DDA1700ADB865 /* DeadlineCardUtils.swift */,
+				5082BC2E292DDA3300ADB865 /* DeadlineCard+Builders.swift */,
+			);
+			path = DeadlineCard;
+			sourceTree = "<group>";
+		};
 		50B7A78928D290E1003924B5 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +188,8 @@
 		50B7A79428D290E1003924B5 /* TCCApp */ = {
 			isa = PBXGroup;
 			children = (
+				5082BC23292DD84800ADB865 /* Models */,
+				5082BC1A292DA22500ADB865 /* Components */,
 				5082BBFC292CE36900ADB865 /* Views */,
 				5082BBFB292CE35C00ADB865 /* Utils */,
 				50B7A79528D290E1003924B5 /* TCCAppApp.swift */,
@@ -199,8 +283,20 @@
 				5082BC03292CF39200ADB865 /* ContentSectionButton.swift in Sources */,
 				5082BC01292CF35700ADB865 /* ContentSideBar.swift in Sources */,
 				50B7A79828D290E1003924B5 /* ContentView.swift in Sources */,
+				5082BC22292DD80500ADB865 /* OwnSectionView+Builders.swift in Sources */,
 				5082BBFF292CE3F600ADB865 /* DesignTokens.swift in Sources */,
+				5082BC2B292DD8C300ADB865 /* DefaultButton.swift in Sources */,
 				50B7A79628D290E1003924B5 /* TCCAppApp.swift in Sources */,
+				5082BC15292DA16300ADB865 /* TeamSectionView.swift in Sources */,
+				5082BC19292DA1F000ADB865 /* TalksSectionView.swift in Sources */,
+				5082BC20292DA27500ADB865 /* ContentView+Builders.swift in Sources */,
+				5082BC2F292DDA3300ADB865 /* DeadlineCard+Builders.swift in Sources */,
+				5082BC17292DA1E500ADB865 /* OwnSectionView.swift in Sources */,
+				5082BC1E292DA25400ADB865 /* UserButton.swift in Sources */,
+				5082BC29292DD8A600ADB865 /* DeadlineCard.swift in Sources */,
+				5082BC25292DD85B00ADB865 /* Deadline.swift in Sources */,
+				5082BC1C292DA23A00ADB865 /* DefaultSectionView.swift in Sources */,
+				5082BC2D292DDA1700ADB865 /* DeadlineCardUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
