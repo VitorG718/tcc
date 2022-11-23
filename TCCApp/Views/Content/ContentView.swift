@@ -24,7 +24,7 @@ struct ContentView: View {
                 
                 VStack(spacing: .zero) {
                     createHeader(with: proxy)
-                        .padding(.top, .height(136, in: proxy, min: 38))
+                        .padding(.top, .height(86, in: proxy, min: 38))
                     
                     Spacer()
                     

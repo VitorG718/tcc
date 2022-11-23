@@ -24,6 +24,11 @@
 		5082BC2B292DD8C300ADB865 /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BC2A292DD8C300ADB865 /* DefaultButton.swift */; };
 		5082BC2D292DDA1700ADB865 /* DeadlineCardUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BC2C292DDA1700ADB865 /* DeadlineCardUtils.swift */; };
 		5082BC2F292DDA3300ADB865 /* DeadlineCard+Builders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BC2E292DDA3300ADB865 /* DeadlineCard+Builders.swift */; };
+		5082C075292E6F4200ADB865 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082C074292E6F4200ADB865 /* Filter.swift */; };
+		5082C077292E6F6400ADB865 /* FilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082C076292E6F6300ADB865 /* FilterButton.swift */; };
+		5082C079292E6FB200ADB865 /* Talk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082C078292E6FB200ADB865 /* Talk.swift */; };
+		5082C07B292E6FDA00ADB865 /* TalksCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082C07A292E6FDA00ADB865 /* TalksCard.swift */; };
+		5082C07D292E700900ADB865 /* TalksSectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082C07C292E700900ADB865 /* TalksSectionViewModel.swift */; };
 		50B7A79628D290E1003924B5 /* TCCAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B7A79528D290E1003924B5 /* TCCAppApp.swift */; };
 		50B7A79828D290E1003924B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B7A79728D290E1003924B5 /* ContentView.swift */; };
 		50B7A79A28D290E4003924B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50B7A79928D290E4003924B5 /* Assets.xcassets */; };
@@ -48,6 +53,11 @@
 		5082BC2A292DD8C300ADB865 /* DefaultButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
 		5082BC2C292DDA1700ADB865 /* DeadlineCardUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadlineCardUtils.swift; sourceTree = "<group>"; };
 		5082BC2E292DDA3300ADB865 /* DeadlineCard+Builders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeadlineCard+Builders.swift"; sourceTree = "<group>"; };
+		5082C074292E6F4200ADB865 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		5082C076292E6F6300ADB865 /* FilterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButton.swift; sourceTree = "<group>"; };
+		5082C078292E6FB200ADB865 /* Talk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Talk.swift; sourceTree = "<group>"; };
+		5082C07A292E6FDA00ADB865 /* TalksCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalksCard.swift; sourceTree = "<group>"; };
+		5082C07C292E700900ADB865 /* TalksSectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalksSectionViewModel.swift; sourceTree = "<group>"; };
 		50B7A79228D290E1003924B5 /* TCCApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCCApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B7A79528D290E1003924B5 /* TCCAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCCAppApp.swift; sourceTree = "<group>"; };
 		50B7A79728D290E1003924B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -136,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				5082BC18292DA1F000ADB865 /* TalksSectionView.swift */,
+				5082C07C292E700900ADB865 /* TalksSectionViewModel.swift */,
 			);
 			path = TalksSection;
 			sourceTree = "<group>";
@@ -147,6 +158,8 @@
 				5082BC1B292DA23A00ADB865 /* DefaultSectionView.swift */,
 				5082BC1D292DA25400ADB865 /* UserButton.swift */,
 				5082BC2A292DD8C300ADB865 /* DefaultButton.swift */,
+				5082C076292E6F6300ADB865 /* FilterButton.swift */,
+				5082C07A292E6FDA00ADB865 /* TalksCard.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -155,6 +168,8 @@
 			isa = PBXGroup;
 			children = (
 				5082BC24292DD85B00ADB865 /* Deadline.swift */,
+				5082C074292E6F4200ADB865 /* Filter.swift */,
+				5082C078292E6FB200ADB865 /* Talk.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -279,7 +294,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5082BC09292CF41700ADB865 /* Color+Token.swift in Sources */,
+				5082C075292E6F4200ADB865 /* Filter.swift in Sources */,
 				5082BC07292CF3DF00ADB865 /* CGFloat+Metrics.swift in Sources */,
+				5082C079292E6FB200ADB865 /* Talk.swift in Sources */,
 				5082BC03292CF39200ADB865 /* ContentSectionButton.swift in Sources */,
 				5082BC01292CF35700ADB865 /* ContentSideBar.swift in Sources */,
 				50B7A79828D290E1003924B5 /* ContentView.swift in Sources */,
@@ -290,9 +307,12 @@
 				5082BC15292DA16300ADB865 /* TeamSectionView.swift in Sources */,
 				5082BC19292DA1F000ADB865 /* TalksSectionView.swift in Sources */,
 				5082BC20292DA27500ADB865 /* ContentView+Builders.swift in Sources */,
+				5082C07D292E700900ADB865 /* TalksSectionViewModel.swift in Sources */,
+				5082C077292E6F6400ADB865 /* FilterButton.swift in Sources */,
 				5082BC2F292DDA3300ADB865 /* DeadlineCard+Builders.swift in Sources */,
 				5082BC17292DA1E500ADB865 /* OwnSectionView.swift in Sources */,
 				5082BC1E292DA25400ADB865 /* UserButton.swift in Sources */,
+				5082C07B292E6FDA00ADB865 /* TalksCard.swift in Sources */,
 				5082BC29292DD8A600ADB865 /* DeadlineCard.swift in Sources */,
 				5082BC25292DD85B00ADB865 /* Deadline.swift in Sources */,
 				5082BC1C292DA23A00ADB865 /* DefaultSectionView.swift in Sources */,
