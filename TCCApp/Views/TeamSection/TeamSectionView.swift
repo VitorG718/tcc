@@ -38,7 +38,8 @@ struct TeamSectionView: View {
                         createUserCard(to: user, with: proxy)
                     }
                 }
-                .padding([.vertical, .horizontal], 5)
+                .padding([.top, .horizontal], 5)
+                .padding(.bottom, .height(50, in: proxy, min: 30))
             }
         }
         .padding(.trailing, .width(120, in: proxy, min: 30))

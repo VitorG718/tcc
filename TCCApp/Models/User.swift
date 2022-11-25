@@ -64,7 +64,7 @@ struct User: Identifiable, Equatable {
             role: "iOS Dev Pleno",
             admissionDate: "12/03/2022",
             writtenTopics: 10,
-            topics: ["Arquitetura", "Design Patterns", "Scrum", "ViewCode"]
+            topics: ["Arquitetura", "Design Patterns", "Scrum"]
         ),
         User(
             id: UUID(), fistName: "Douglas",
@@ -72,7 +72,7 @@ struct User: Identifiable, Equatable {
             role: "iOS Dev Pleno",
             admissionDate: "12/03/2022",
             writtenTopics: 9,
-            topics: ["Arquitetura", "Design Patterns", "Scrum", "ViewCode"]
+            topics: ["Arquitetura", "Design Patterns", "Scrum"]
         ),
         User(
             id: UUID(), fistName: "Vitor",
@@ -80,7 +80,7 @@ struct User: Identifiable, Equatable {
             role: "iOS Dev Pleno",
             admissionDate: "15/03/2022",
             writtenTopics: 7,
-            topics: ["Arquitetura", "Design Patterns", "Scrum", "ViewCode"]
+            topics: ["Arquitetura", "Design Patterns", "Scrum"]
         ),
         User(
             id: UUID(), fistName: "Sérgio",
@@ -88,7 +88,7 @@ struct User: Identifiable, Equatable {
             role: "iOS Dev Pleno",
             admissionDate: "10/03/2022",
             writtenTopics: 4,
-            topics: ["Arquitetura", "Design Patterns", "Scrum", "ViewCode"]
+            topics: ["Arquitetura", "Design Patterns", "Scrum"]
         ),
         User(
             id: UUID(), fistName: "Jessé",
@@ -96,7 +96,7 @@ struct User: Identifiable, Equatable {
             role: "UI/UX Junior",
             admissionDate: "10/03/2022",
             writtenTopics: 10,
-            topics: ["Arquitetura", "Design Patterns", "Scrum", "ViewCode"]
+            topics: ["Arquitetura", "Design Patterns", "Scrum"]
         ),
     ]
 }
