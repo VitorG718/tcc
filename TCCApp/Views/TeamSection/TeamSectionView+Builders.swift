@@ -189,14 +189,3 @@ struct TeamSectionViewBuilders_Previews: PreviewProvider {
             .frame(width: 1080, height: 675)
     }
 }
-
-extension View {
-    func border(color: Color, lineWidth: CGFloat = 1.0, cornerRadius: CGFloat = 0) -> some View {
-        self
-            .cornerRadius(cornerRadius)
-            .overlay(
-                RoundedRectangle(cornerRadius: cornerRadius)
-                    .stroke(color, lineWidth: lineWidth)
-            )
-    }
-}

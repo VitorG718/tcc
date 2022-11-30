@@ -8,9 +8,9 @@
 import Foundation
 
 struct Talk: Identifiable, Equatable {
-    enum Status {
-        case closed
-        case opened
+    enum Status: String {
+        case closed = "Finalizado"
+        case opened = "Em Aberto"
     }
     
     let id: UUID

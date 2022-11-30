@@ -8,10 +8,24 @@
 import Foundation
 
 class TalksSectionViewModel: ObservableObject {
-    private let allTalks = Talk.sample
-    @Published var talks = Talk.sample
-    private var filters = [Filter]()
-    @Published var currentTalk: Talk? = nil
+    private let allTalks: [Talk]
+    private var filteredTalks: [Talk]
+    @Published var talks: [Talk]
+    private var filters: [Filter]
+    @Published var currentTalk: Talk?
+    @Published var searchText: String {
+        didSet { filterBySearchText() }
+    }
+    
+    init() {
+        let allTalks = Talk.sample
+        self.allTalks = allTalks
+        self.filteredTalks = allTalks
+        self.talks = allTalks
+        self.filters = [Filter]()
+        self.currentTalk = nil
+        self.searchText = ""
+    }
     
     func removeFilter(_ filter: Filter) {
         if let index = filters.firstIndex(of: filter) {
@@ -29,10 +43,19 @@ class TalksSectionViewModel: ObservableObject {
     
     private func filterTalks() {
         let statusToFilter = filters.map(\.talkStatus)
-        if statusToFilter.isEmpty {
-            talks = allTalks
+        if statusToFilter.isEmpty && searchText.count < 3 {
+            filteredTalks = allTalks
         } else {
-            talks = allTalks.filter({ statusToFilter.contains($0.status) })
+            filteredTalks = allTalks.filter({ statusToFilter.contains($0.status) })
+        }
+        filterBySearchText()
+    }
+    
+    private func filterBySearchText() {
+        if searchText.count >= 3 {
+            talks = filteredTalks.filter({ $0.name.contains(searchText) })
+        } else {
+            talks = filteredTalks
         }
     }
 }

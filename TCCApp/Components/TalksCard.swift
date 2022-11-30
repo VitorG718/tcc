@@ -16,9 +16,7 @@ struct TalksCard: View {
     var body: some View {
         VStack(spacing: .zero) {
             Button(
-                action: {
-                    currentTalk = talk
-                },
+                action: { currentTalk = talk },
                 label: {
                     GeometryReader { metrics in
                         HStack(spacing: .width(30, in: proxy, min: 15)) {
@@ -27,29 +25,46 @@ struct TalksCard: View {
                                 .fill(isSelected ? Color.black : Color.gray)
                                 .frame(width: circleSize, height: circleSize)
                             
-                            VStack {
-                                Text(talk.name)
-                                    .font(.system(
-                                        size: .height(24, in: proxy, min: 12),
-                                        weight: .regular
-                                    ))
-                                    .foregroundColor(isSelected ? Color.black : Color.white)
-                            }
-                            .frame(maxWidth: .infinity, alignment: .leading)
+                            createCardContent()
                         }
                         .frame(maxHeight: .infinity)
                     }
                 }
             )
             .buttonStyle(.borderless)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
             .padding(.trailing, .width(35, in: proxy, min: 15))
             .padding(.leading, .width(45, in: proxy, min: 20))
-            
-            Rectangle()
-                .fill(Color.gray)
-                .frame(height: 1.5)
         }
         .frame(height: .height(160, in: proxy, min: 80))
         .background(isSelected ? Color(token: .activeGreen) : Color(token: .backgroundPrimary))
+    }
+    
+    @ViewBuilder
+    func createCardContent() -> some View {
+        let assignees = talk.autores.joined(separator: ", ")
+        
+        VStack(alignment: .leading, spacing: .height(9, in: proxy, min: 5)) {
+            Text(talk.status.rawValue.uppercased())
+                .font(.system(
+                    size: .height(20, in: proxy, min: 10),
+                    weight: .regular
+                ))
+            
+            Text(talk.name)
+                .font(.system(
+                    size: .height(30, in: proxy, min: 15),
+                    weight: .medium
+                ))
+            
+            Text(assignees)
+                .font(.system(
+                    size: .height(24, in: proxy, min: 12),
+                    weight: .regular
+                ))
+        }
+        .lineLimit(1)
+        .foregroundColor(isSelected ? Color.black : Color.white)
+        .frame(maxWidth: .infinity, alignment: .leading)
     }
 }

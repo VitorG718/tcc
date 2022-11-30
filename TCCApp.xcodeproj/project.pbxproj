@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		4E68ECA6292EBEC1004B64D5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E68ECA5292EBEC1004B64D5 /* User.swift */; };
 		4E68ECA8292EBF0B004B64D5 /* TeamSectionView+Builders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E68ECA7292EBF0B004B64D5 /* TeamSectionView+Builders.swift */; };
+		507CD7072937D68B00A9661B /* Date+MonthName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507CD7062937D68B00A9661B /* Date+MonthName.swift */; };
+		507CD70A2937F04500A9661B /* RectCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507CD7092937F04500A9661B /* RectCorner.swift */; };
+		507CD70C2937F06800A9661B /* View+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507CD70B2937F06800A9661B /* View+CornerRadius.swift */; };
+		507CD70E2937F09100A9661B /* View+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507CD70D2937F09100A9661B /* View+Border.swift */; };
 		5082BBFF292CE3F600ADB865 /* DesignTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BBFE292CE3F600ADB865 /* DesignTokens.swift */; };
 		5082BC01292CF35700ADB865 /* ContentSideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BC00292CF35700ADB865 /* ContentSideBar.swift */; };
 		5082BC03292CF39200ADB865 /* ContentSectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BC02292CF39200ADB865 /* ContentSectionButton.swift */; };
@@ -40,6 +44,10 @@
 /* Begin PBXFileReference section */
 		4E68ECA5292EBEC1004B64D5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4E68ECA7292EBF0B004B64D5 /* TeamSectionView+Builders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TeamSectionView+Builders.swift"; sourceTree = "<group>"; };
+		507CD7062937D68B00A9661B /* Date+MonthName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+MonthName.swift"; sourceTree = "<group>"; };
+		507CD7092937F04500A9661B /* RectCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectCorner.swift; sourceTree = "<group>"; };
+		507CD70B2937F06800A9661B /* View+CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+CornerRadius.swift"; sourceTree = "<group>"; };
+		507CD70D2937F09100A9661B /* View+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Border.swift"; sourceTree = "<group>"; };
 		5082BBFE292CE3F600ADB865 /* DesignTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTokens.swift; sourceTree = "<group>"; };
 		5082BC00292CF35700ADB865 /* ContentSideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSideBar.swift; sourceTree = "<group>"; };
 		5082BC02292CF39200ADB865 /* ContentSectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSectionButton.swift; sourceTree = "<group>"; };
@@ -81,9 +89,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		507CD7082937F03700A9661B /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				507CD7092937F04500A9661B /* RectCorner.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
 		5082BBFB292CE35C00ADB865 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				507CD7082937F03700A9661B /* Commons */,
 				5082BC05292CF3CF00ADB865 /* Extensions */,
 				5082BC04292CF3BC00ADB865 /* Tokens */,
 			);
@@ -125,6 +142,9 @@
 			children = (
 				5082BC06292CF3DF00ADB865 /* CGFloat+Metrics.swift */,
 				5082BC08292CF41700ADB865 /* Color+Token.swift */,
+				507CD7062937D68B00A9661B /* Date+MonthName.swift */,
+				507CD70B2937F06800A9661B /* View+CornerRadius.swift */,
+				507CD70D2937F09100A9661B /* View+Border.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -301,6 +321,7 @@
 			files = (
 				5082BC09292CF41700ADB865 /* Color+Token.swift in Sources */,
 				4E68ECA8292EBF0B004B64D5 /* TeamSectionView+Builders.swift in Sources */,
+				507CD70A2937F04500A9661B /* RectCorner.swift in Sources */,
 				5082C075292E6F4200ADB865 /* Filter.swift in Sources */,
 				5082BC07292CF3DF00ADB865 /* CGFloat+Metrics.swift in Sources */,
 				4E68ECA6292EBEC1004B64D5 /* User.swift in Sources */,
@@ -309,8 +330,10 @@
 				5082BC01292CF35700ADB865 /* ContentSideBar.swift in Sources */,
 				50B7A79828D290E1003924B5 /* ContentView.swift in Sources */,
 				5082BC22292DD80500ADB865 /* OwnSectionView+Builders.swift in Sources */,
+				507CD7072937D68B00A9661B /* Date+MonthName.swift in Sources */,
 				5082BBFF292CE3F600ADB865 /* DesignTokens.swift in Sources */,
 				5082BC2B292DD8C300ADB865 /* DefaultButton.swift in Sources */,
+				507CD70C2937F06800A9661B /* View+CornerRadius.swift in Sources */,
 				50B7A79628D290E1003924B5 /* TCCAppApp.swift in Sources */,
 				5082BC15292DA16300ADB865 /* TeamSectionView.swift in Sources */,
 				5082BC19292DA1F000ADB865 /* TalksSectionView.swift in Sources */,
@@ -324,6 +347,7 @@
 				5082BC29292DD8A600ADB865 /* DeadlineCard.swift in Sources */,
 				5082BC25292DD85B00ADB865 /* Deadline.swift in Sources */,
 				5082BC1C292DA23A00ADB865 /* DefaultSectionView.swift in Sources */,
+				507CD70E2937F09100A9661B /* View+Border.swift in Sources */,
 				5082BC2D292DDA1700ADB865 /* DeadlineCardUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
