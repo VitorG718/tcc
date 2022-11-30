@@ -45,11 +45,15 @@ struct TalksCard: View {
         let assignees = talk.autores.joined(separator: ", ")
         
         VStack(alignment: .leading, spacing: .height(9, in: proxy, min: 5)) {
-            Text(talk.status.rawValue.uppercased())
-                .font(.system(
-                    size: .height(20, in: proxy, min: 10),
-                    weight: .regular
-                ))
+            HStack(spacing: .zero) {
+                Text(talk.status.rawValue.uppercased())
+                Spacer()
+                Text(talk.lastUpdate.formatted(date: .numeric, time: .omitted))
+            }
+            .font(.system(
+                size: .height(20, in: proxy, min: 10),
+                weight: .regular
+            ))
             
             Text(talk.name)
                 .font(.system(
