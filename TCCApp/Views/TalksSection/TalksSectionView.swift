@@ -23,28 +23,12 @@ struct TalksSectionView: View {
                     DefaultSectionView
                         .createHeader("Discussões", with: proxy, hasButton: .use("+ Criar", {}))
                     
-                    HStack {
-                        TextField("Ex: Modelagem do banco de dados...", text: $viewModel.searchText)
-                            .textFieldStyle(.plain)
-                            .font(.system(
-                                size: .height(24, in: proxy, min: 14),
-                                weight: .regular
-                            ))
-                            .padding(.trailing, .width(16, in: proxy, min: 8))
-                            .foregroundColor(.white)
-                        
-                        Image(systemName: "magnifyingglass")
-                            .font(.system(
-                                size: .height(32, in: proxy, min: 20),
-                                weight: .semibold
-                            ))
-                            .foregroundColor(.secondary)
-                    }
-                    .padding(.vertical, .height(32, in: proxy, min: 10))
-                    .padding(.horizontal, .width(32, in: proxy, min: 10))
-                    .border(color: .gray, lineWidth: 1.5, cornerRadius: 20)
+                    createTextField(
+                        "Ex: Modelagem do banco de dados...",
+                        imageName: "magnifyingglass",
+                        textBinding: $viewModel.searchText
+                    )
                     .padding(.vertical, .height(50, in: proxy, min: 20))
-                    
                     
                     createFiltersCarousel()
                     
@@ -52,9 +36,33 @@ struct TalksSectionView: View {
                 }
             },
             secondSection: {
-                Color.purple
+                ZStack {
+                    if viewModel.currentTalk == nil {
+                        Text("A conversa selecionada\nirá aparecer aqui".uppercased())
+                            .font(.system(
+                                size: .width(32, in: proxy, min: 20),
+                                weight: .regular
+                            ))
+                            .foregroundColor(.secondary)
+                            .frame(maxWidth: .infinity)
+                            .padding(.horizontal, .width(50, in: proxy, min: 25))
+                            .multilineTextAlignment(.center)
+                    } else {
+                        VStack(spacing: .height(60, in: proxy, min: 20)) {
+                            createChatContent()
+                            
+                            createTextField(
+                                "Escreva sua contribuição aqui",
+                                imageName: "paperplane.fill",
+                                textBinding: $viewModel.chatText
+                            )
+                        }
+                        .padding(.trailing, .width(66, in: proxy, min: 15))
+                    }
+                }
             }
         )
+        .padding(.bottom, .height(60, in: proxy, min: 20))
     }
 }
 

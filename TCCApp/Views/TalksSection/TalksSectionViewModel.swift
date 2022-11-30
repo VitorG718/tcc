@@ -10,21 +10,21 @@ import Foundation
 class TalksSectionViewModel: ObservableObject {
     private let allTalks: [Talk]
     private var filteredTalks: [Talk]
-    @Published var talks: [Talk]
-    private var filters: [Filter]
-    @Published var currentTalk: Talk?
-    @Published var searchText: String {
+    @Published private(set) var talks: [Talk]
+    private var filters: [Filter] = [Filter]()
+    @Published var currentTalk: Talk? = nil
+    @Published var searchText: String = "" {
         didSet { filterBySearchText() }
     }
+    @Published var chatText: String = ""
+    private(set) var messages: [Message]
     
     init() {
         let allTalks = Talk.sample
         self.allTalks = allTalks
         self.filteredTalks = allTalks
         self.talks = allTalks
-        self.filters = [Filter]()
-        self.currentTalk = nil
-        self.searchText = ""
+        self.messages = Message.sample
     }
     
     func removeFilter(_ filter: Filter) {
@@ -57,5 +57,12 @@ class TalksSectionViewModel: ObservableObject {
         } else {
             talks = filteredTalks
         }
+    }
+    
+    func sendMessage() {
+        guard !chatText.isEmpty else { return }
+        let newMessage = Message(content: chatText, author: User.sample[4], likes: [], media: nil)
+        messages.append(newMessage)
+        chatText = ""
     }
 }

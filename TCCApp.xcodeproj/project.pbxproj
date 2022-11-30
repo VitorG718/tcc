@@ -14,6 +14,8 @@
 		507CD70C2937F06800A9661B /* View+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507CD70B2937F06800A9661B /* View+CornerRadius.swift */; };
 		507CD70E2937F09100A9661B /* View+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507CD70D2937F09100A9661B /* View+Border.swift */; };
 		507CD7102937F20400A9661B /* TalksSectionView+Builders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507CD70F2937F20400A9661B /* TalksSectionView+Builders.swift */; };
+		507CD712293812B000A9661B /* MessageMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507CD711293812B000A9661B /* MessageMedia.swift */; };
+		507CD714293812CE00A9661B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507CD713293812CE00A9661B /* Message.swift */; };
 		5082BBFF292CE3F600ADB865 /* DesignTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BBFE292CE3F600ADB865 /* DesignTokens.swift */; };
 		5082BC01292CF35700ADB865 /* ContentSideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BC00292CF35700ADB865 /* ContentSideBar.swift */; };
 		5082BC03292CF39200ADB865 /* ContentSectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BC02292CF39200ADB865 /* ContentSectionButton.swift */; };
@@ -50,6 +52,8 @@
 		507CD70B2937F06800A9661B /* View+CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+CornerRadius.swift"; sourceTree = "<group>"; };
 		507CD70D2937F09100A9661B /* View+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Border.swift"; sourceTree = "<group>"; };
 		507CD70F2937F20400A9661B /* TalksSectionView+Builders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TalksSectionView+Builders.swift"; sourceTree = "<group>"; };
+		507CD711293812B000A9661B /* MessageMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageMedia.swift; sourceTree = "<group>"; };
+		507CD713293812CE00A9661B /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		5082BBFE292CE3F600ADB865 /* DesignTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTokens.swift; sourceTree = "<group>"; };
 		5082BC00292CF35700ADB865 /* ContentSideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSideBar.swift; sourceTree = "<group>"; };
 		5082BC02292CF39200ADB865 /* ContentSectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSectionButton.swift; sourceTree = "<group>"; };
@@ -199,6 +203,8 @@
 				5082C074292E6F4200ADB865 /* Filter.swift */,
 				5082C078292E6FB200ADB865 /* Talk.swift */,
 				4E68ECA5292EBEC1004B64D5 /* User.swift */,
+				507CD711293812B000A9661B /* MessageMedia.swift */,
+				507CD713293812CE00A9661B /* Message.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -328,6 +334,7 @@
 				5082C075292E6F4200ADB865 /* Filter.swift in Sources */,
 				5082BC07292CF3DF00ADB865 /* CGFloat+Metrics.swift in Sources */,
 				4E68ECA6292EBEC1004B64D5 /* User.swift in Sources */,
+				507CD714293812CE00A9661B /* Message.swift in Sources */,
 				5082C079292E6FB200ADB865 /* Talk.swift in Sources */,
 				5082BC03292CF39200ADB865 /* ContentSectionButton.swift in Sources */,
 				5082BC01292CF35700ADB865 /* ContentSideBar.swift in Sources */,
@@ -340,6 +347,7 @@
 				50B7A79628D290E1003924B5 /* TCCAppApp.swift in Sources */,
 				5082BC15292DA16300ADB865 /* TeamSectionView.swift in Sources */,
 				5082BC19292DA1F000ADB865 /* TalksSectionView.swift in Sources */,
+				507CD712293812B000A9661B /* MessageMedia.swift in Sources */,
 				5082BC20292DA27500ADB865 /* ContentView+Builders.swift in Sources */,
 				5082C07D292E700900ADB865 /* TalksSectionViewModel.swift in Sources */,
 				5082C077292E6F6400ADB865 /* FilterButton.swift in Sources */,
