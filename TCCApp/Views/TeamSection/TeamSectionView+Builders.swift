@@ -13,7 +13,7 @@ extension TeamSectionView {
         GeometryReader { metrics in
             VStack(spacing: .zero) {
                 VStack(spacing: .zero) {
-                    createCardContent(with: proxy)
+                    createCardContent(with: proxy, user: user)
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                     
                     Rectangle()
@@ -28,13 +28,13 @@ extension TeamSectionView {
                 .background(Color(token: .backgroundPrimary))
                 .border(color: .gray, lineWidth: 2.5, cornerRadius: 20)
                 
-                let titles = ["Recomendar", "Dar um Feedback", "Dar um Feedback"]
+                let titles = ["Recomendar", "Dar um Feedback", "Avaliar"]
                 HStack(spacing: 10) {
                     ForEach(titles, id: \.hashValue) { cardTitle in
                         createCardButton(title: cardTitle, with: proxy, handler: {})
                     }
                 }
-                .frame(height: metrics.size.height * 0.18)
+                .frame(height: metrics.size.height * 0.15)
                 .padding(.top, .height(30, in: proxy, min: 10))
             }
         }
@@ -60,8 +60,73 @@ extension TeamSectionView {
     }
     
     @ViewBuilder
-    private func createCardContent(with proxy: GeometryProxy) -> some View {
-        Text("Content")
+    private func createCardContent(with proxy: GeometryProxy, user: User) -> some View {
+        let color = user.color
+        let username = "\(user.firstName) \(user.lastName)"
+        let role = user.role
+        let admission = getAdmissionMessage(to: user.admissionDate)
+        
+        HStack(spacing: .zero) {
+            VStack(spacing: .zero) {
+                Spacer()
+                
+                let imageSize: CGFloat = .height(230, in: proxy, min: 90)
+                Image(systemName: "person.fill")
+                    .resizable()
+                    .frame(width: imageSize, height: imageSize)
+                    .foregroundColor(color)
+                    .padding(.trailing, .width(40, in: proxy, min: 20))
+            }
+            
+            VStack(spacing: .zero) {
+                HStack {
+                    Spacer()
+                    Button(
+                        action: {},
+                        label: {
+                            let imageSize: CGFloat = .height(40, in: proxy, min: 20)
+                            Image(systemName: "ellipsis.circle.fill")
+                                .resizable()
+                                .frame(width: imageSize, height: imageSize)
+                                .foregroundColor(.secondary)
+                        }
+                    )
+                    .buttonStyle(.borderless)
+                }
+                
+                Spacer()
+                
+                Text(username.uppercased())
+                    .font(.system(size: .height(32, in: proxy, min: 18), weight: .medium))
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .lineLimit(1)
+                    .foregroundColor(color)
+                    .padding(.bottom, .height(9, in: proxy, min: 5))
+                
+                Text(role)
+                    .font(.system(size: .height(20, in: proxy, min: 12), weight: .regular))
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .lineLimit(1)
+                    .foregroundColor(.white)
+                    .padding(.bottom, .height(40, in: proxy, min: 15))
+                
+                Text(admission)
+                    .font(.system(size: .height(20, in: proxy, min: 12), weight: .regular))
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .lineLimit(1)
+                    .foregroundColor(.white)
+            }
+            .padding(.vertical, .height(20, in: proxy, min: 8))
+        }
+        .padding(.horizontal, .width(40, in: proxy, min: 20))
+    }
+    
+    private func getAdmissionMessage(to date: Date) -> String {
+        let components = Calendar.current.dateComponents([.month, .year], from: date)
+        let month = Date.getMonthName(from: components.month, style: .long).lowercased()
+        let year = String(components.year ?? 2022)
+        
+        return "Na equipe desde \(month) de \(year)"
     }
     
     @ViewBuilder
