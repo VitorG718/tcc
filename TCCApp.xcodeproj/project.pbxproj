@@ -16,6 +16,7 @@
 		507CD7102937F20400A9661B /* TalksSectionView+Builders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507CD70F2937F20400A9661B /* TalksSectionView+Builders.swift */; };
 		507CD712293812B000A9661B /* MessageMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507CD711293812B000A9661B /* MessageMedia.swift */; };
 		507CD714293812CE00A9661B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507CD713293812CE00A9661B /* Message.swift */; };
+		507CD718293837D900A9661B /* Suggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507CD717293837D900A9661B /* Suggestion.swift */; };
 		5082BBFF292CE3F600ADB865 /* DesignTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BBFE292CE3F600ADB865 /* DesignTokens.swift */; };
 		5082BC01292CF35700ADB865 /* ContentSideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BC00292CF35700ADB865 /* ContentSideBar.swift */; };
 		5082BC03292CF39200ADB865 /* ContentSectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BC02292CF39200ADB865 /* ContentSectionButton.swift */; };
@@ -54,6 +55,7 @@
 		507CD70F2937F20400A9661B /* TalksSectionView+Builders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TalksSectionView+Builders.swift"; sourceTree = "<group>"; };
 		507CD711293812B000A9661B /* MessageMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageMedia.swift; sourceTree = "<group>"; };
 		507CD713293812CE00A9661B /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		507CD717293837D900A9661B /* Suggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suggestion.swift; sourceTree = "<group>"; };
 		5082BBFE292CE3F600ADB865 /* DesignTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTokens.swift; sourceTree = "<group>"; };
 		5082BC00292CF35700ADB865 /* ContentSideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSideBar.swift; sourceTree = "<group>"; };
 		5082BC02292CF39200ADB865 /* ContentSectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSectionButton.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 				4E68ECA5292EBEC1004B64D5 /* User.swift */,
 				507CD711293812B000A9661B /* MessageMedia.swift */,
 				507CD713293812CE00A9661B /* Message.swift */,
+				507CD717293837D900A9661B /* Suggestion.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				5082BC29292DD8A600ADB865 /* DeadlineCard.swift in Sources */,
 				5082BC25292DD85B00ADB865 /* Deadline.swift in Sources */,
 				5082BC1C292DA23A00ADB865 /* DefaultSectionView.swift in Sources */,
+				507CD718293837D900A9661B /* Suggestion.swift in Sources */,
 				507CD70E2937F09100A9661B /* View+Border.swift in Sources */,
 				5082BC2D292DDA1700ADB865 /* DeadlineCardUtils.swift in Sources */,
 			);
