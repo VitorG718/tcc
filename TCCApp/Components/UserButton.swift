@@ -19,14 +19,14 @@ struct UserButton: View {
             VStack(alignment: .leading, spacing: .zero) {
                 Text("cargo")
                     .font(.system(
-                        size: .height(20, in: proxy, min: 12),
+                        size: .height(20, in: proxy, min: 10),
                         weight: .regular
                     ))
                     .foregroundColor(.white)
                 
                 Text("UI/UX Junior")
                     .font(.system(
-                        size: .height(32, in: proxy, min: 19.2),
+                        size: .height(32, in: proxy, min: 16),
                         weight: .medium
                     ))
                     .foregroundColor(.white)
@@ -41,7 +41,7 @@ struct UserButton: View {
                 
                 Text("Jessé")
                     .font(.system(
-                        size: .height(40, in: proxy, min: 25),
+                        size: .height(40, in: proxy, min: 20),
                         weight: .medium
                     ))
                     .foregroundColor(.white)
@@ -49,9 +49,10 @@ struct UserButton: View {
                     .padding(.trailing, 6)
                
                 let rectSize = height * 0.2
-                Rectangle()
-                    .fill(Color.white)
+                Image(systemName: "arrowtriangle.down.fill")
+                    .resizable()
                     .frame(width: rectSize, height: rectSize)
+                    .foregroundColor(.white)
                     .padding(.trailing, .width(25, in: proxy, min: 15))
             }
             .frame(maxHeight: .infinity)
@@ -66,6 +67,6 @@ struct UserButton: View {
             .clipShape(Capsule())
             
         }
-        .frame(height: .height(66, in: proxy, min: 55))
+        .frame(height: .height(66, in: proxy, min: 50))
     }
 }

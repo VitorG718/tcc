@@ -30,18 +30,25 @@ extension ContentView {
             VStack(alignment: .leading, spacing: .height(10, in: proxy, min: 5)) {
                 Text("Olá, Jessé")
                     .font(.system(
-                        size: .height(64, in: proxy, min: 38.4),
+                        size: .height(64, in: proxy, min: 32),
                         weight: .medium
                     ))
                     .foregroundColor(.white)
                 
                 Text("seja bem-vindo")
                     .font(.system(
-                        size: .height(32, in: proxy, min: 19.2),
+                        size: .height(32, in: proxy, min: 16),
                         weight: .regular
                     ))
                     .foregroundColor(.white)
             }
         } else { EmptyView() }
+    }
+}
+
+struct ContentViewBuilders_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+            .frame(width: 1080, height: 675)
     }
 }
