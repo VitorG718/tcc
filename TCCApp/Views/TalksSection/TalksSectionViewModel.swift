@@ -11,7 +11,7 @@ class TalksSectionViewModel: ObservableObject {
     private let allTalks: [Talk]
     private var filteredTalks: [Talk]
     @Published private(set) var talks: [Talk]
-    private var filters: [Filter] = [Filter]()
+    private var filters: [DeadlineFilter] = [DeadlineFilter]()
     @Published var currentTalk: Talk? = nil
     @Published var searchText: String = "" {
         didSet { filterBySearchText() }
@@ -27,14 +27,14 @@ class TalksSectionViewModel: ObservableObject {
         self.messages = Message.sample
     }
     
-    func removeFilter(_ filter: Filter) {
+    func removeFilter(_ filter: DeadlineFilter) {
         if let index = filters.firstIndex(of: filter) {
             filters.remove(at: index)
         }
         filterTalks()
     }
     
-    func addFilter(_ filter: Filter) {
+    func addFilter(_ filter: DeadlineFilter) {
         if !filters.contains(filter) {
             filters.append(filter)
         }

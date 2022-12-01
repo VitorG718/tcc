@@ -145,6 +145,132 @@ extension OwnSectionView {
             }
         }
     }
+    
+    @ViewBuilder
+    func createFeedbacksArea() -> some View {
+        VStack(alignment: .leading, spacing: .zero) {
+            Text("FEEDBACKS")
+                .font(.system(
+                    size: .height(32, in: proxy, min: 16),
+                    weight: .medium
+                ))
+                .foregroundColor(.white)
+            
+            createFeedbacksAreaFiltersCarousel()
+                .padding(.vertical, .height(25, in: proxy, min: 10))
+            
+            createFeedbacksScroll()
+        }
+        .padding(.trailing, .width(66, in: proxy, min: 15))
+        .padding(.top, .height(30, in: proxy, min: 15))
+        .padding(.bottom, .height(60, in: proxy, min: 30))
+    }
+    
+    @ViewBuilder
+    func createFeedbacksAreaFiltersCarousel() -> some View {
+        HStack(spacing: 10) {
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: .width(17, in: proxy, min: 10)) {
+                    ForEach(FeedbackFilter.filters) { filter in
+                        FilterButton(
+                            filter: filter, proxy: proxy,
+                            handler: { (_, _) in }
+                        )
+                    }
+                }
+                .padding([.vertical, .horizontal], 1)
+            }
+            
+            Image(systemName: "chevron.forward")
+                .font(.system(
+                    size: .height(36, in: proxy, min: 18),
+                    weight: .semibold
+                ))
+                .foregroundColor(.white)
+        }
+    }
+    
+    @ViewBuilder
+    private func createFeedbacksScroll() -> some View {
+        ScrollView(.vertical, showsIndicators: false) {
+            LazyVStack(spacing: .height(20, in: proxy, min: 10)) {
+                ForEach(Feedback.sample) { feedback in
+                    createFeedbacksScrollCard(to: feedback)
+                }
+            }
+            .padding([.vertical, .horizontal], 1)
+        }
+        .padding(.vertical, .height(45, in: proxy, min: 20))
+        .padding(.leading, .height(32, in: proxy, min: 10))
+        .padding(.trailing, .height(60, in: proxy, min: 20))
+        .background(Color(token: .backgroundPrimary))
+        .border(color: .gray, cornerRadius: 20)
+    }
+    
+    @ViewBuilder
+    func createFeedbacksScrollCard(to feedback: Feedback) -> some View {
+        HStack(spacing: .width(30, in: proxy, min: 15)) {
+            let imageSize = CGFloat.width(50, in: proxy, min: 25)
+            Image(systemName: "hand.thumbsup.fill")
+                .resizable()
+                .frame(width: imageSize, height: imageSize)
+                .padding(.width(20, in: proxy, min: 10))
+                .background(feedback.filter.color.opacity(0.8))
+                .border(color: .clear, cornerRadius: 15)
+            
+            VStack(alignment: .leading, spacing: .zero) {
+                Text(feedback.filter.name.uppercased())
+                    .font(.system(
+                        size: .height(16, in: proxy, min: 10),
+                        weight: .regular
+                    ))
+                    .foregroundColor(feedback.filter.color)
+                
+                Text(feedback.title)
+                    .font(.system(
+                        size: .height(24, in: proxy, min: 14),
+                        weight: .semibold
+                    ))
+                    .foregroundColor(.white)
+                    .padding(.bottom, .height(6, in: proxy, min: 3))
+                
+                createFeedbacksScrollCardFooter(to: feedback.author)
+            }
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(.vertical, .height(30, in: proxy, min: 15))
+        .padding(.horizontal, .width(30, in: proxy, min: 15))
+        .background(Color(nsColor: .darkGray))
+        .border(color: .gray, cornerRadius: 10)
+    }
+    
+    @ViewBuilder
+    func createFeedbacksScrollCardFooter(to author: User) -> some View {
+        HStack(spacing: .width(10, in: proxy, min: 5)) {
+            Text("Por")
+                .font(.system(
+                    size: .height(15, in: proxy, min: 12),
+                    weight: .medium
+                ))
+                .foregroundColor(.secondary)
+            
+            HStack(spacing: .zero){
+                Image(systemName: "person.circle")
+                    .font(.system(
+                        size: .height(15, in: proxy, min: 12),
+                        weight: .bold
+                    ))
+                    .foregroundColor(.white)
+                
+                Text(author.firstName)
+                    .font(.system(
+                        size: .height(15, in: proxy, min: 12),
+                        weight: .regular
+                    ))
+                    .foregroundColor(.white)
+            }
+        }
+    }
 }
 
 struct OwnSectionViewBuilders_Previews: PreviewProvider {

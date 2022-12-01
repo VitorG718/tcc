@@ -17,6 +17,9 @@
 		507CD712293812B000A9661B /* MessageMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507CD711293812B000A9661B /* MessageMedia.swift */; };
 		507CD714293812CE00A9661B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507CD713293812CE00A9661B /* Message.swift */; };
 		507CD718293837D900A9661B /* Suggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507CD717293837D900A9661B /* Suggestion.swift */; };
+		507CD71B29383C2600A9661B /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507CD71A29383C2600A9661B /* Filter.swift */; };
+		507CD71D29383C6900A9661B /* FeedbackFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507CD71C29383C6900A9661B /* FeedbackFilter.swift */; };
+		507CD71F293845F100A9661B /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507CD71E293845F100A9661B /* Feedback.swift */; };
 		5082BBFF292CE3F600ADB865 /* DesignTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BBFE292CE3F600ADB865 /* DesignTokens.swift */; };
 		5082BC01292CF35700ADB865 /* ContentSideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BC00292CF35700ADB865 /* ContentSideBar.swift */; };
 		5082BC03292CF39200ADB865 /* ContentSectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BC02292CF39200ADB865 /* ContentSectionButton.swift */; };
@@ -34,7 +37,7 @@
 		5082BC2B292DD8C300ADB865 /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BC2A292DD8C300ADB865 /* DefaultButton.swift */; };
 		5082BC2D292DDA1700ADB865 /* DeadlineCardUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BC2C292DDA1700ADB865 /* DeadlineCardUtils.swift */; };
 		5082BC2F292DDA3300ADB865 /* DeadlineCard+Builders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BC2E292DDA3300ADB865 /* DeadlineCard+Builders.swift */; };
-		5082C075292E6F4200ADB865 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082C074292E6F4200ADB865 /* Filter.swift */; };
+		5082C075292E6F4200ADB865 /* DeadlineFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082C074292E6F4200ADB865 /* DeadlineFilter.swift */; };
 		5082C077292E6F6400ADB865 /* FilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082C076292E6F6300ADB865 /* FilterButton.swift */; };
 		5082C079292E6FB200ADB865 /* Talk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082C078292E6FB200ADB865 /* Talk.swift */; };
 		5082C07B292E6FDA00ADB865 /* TalksCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082C07A292E6FDA00ADB865 /* TalksCard.swift */; };
@@ -56,6 +59,9 @@
 		507CD711293812B000A9661B /* MessageMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageMedia.swift; sourceTree = "<group>"; };
 		507CD713293812CE00A9661B /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		507CD717293837D900A9661B /* Suggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suggestion.swift; sourceTree = "<group>"; };
+		507CD71A29383C2600A9661B /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		507CD71C29383C6900A9661B /* FeedbackFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackFilter.swift; sourceTree = "<group>"; };
+		507CD71E293845F100A9661B /* Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
 		5082BBFE292CE3F600ADB865 /* DesignTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTokens.swift; sourceTree = "<group>"; };
 		5082BC00292CF35700ADB865 /* ContentSideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSideBar.swift; sourceTree = "<group>"; };
 		5082BC02292CF39200ADB865 /* ContentSectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSectionButton.swift; sourceTree = "<group>"; };
@@ -73,7 +79,7 @@
 		5082BC2A292DD8C300ADB865 /* DefaultButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
 		5082BC2C292DDA1700ADB865 /* DeadlineCardUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadlineCardUtils.swift; sourceTree = "<group>"; };
 		5082BC2E292DDA3300ADB865 /* DeadlineCard+Builders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeadlineCard+Builders.swift"; sourceTree = "<group>"; };
-		5082C074292E6F4200ADB865 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		5082C074292E6F4200ADB865 /* DeadlineFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadlineFilter.swift; sourceTree = "<group>"; };
 		5082C076292E6F6300ADB865 /* FilterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButton.swift; sourceTree = "<group>"; };
 		5082C078292E6FB200ADB865 /* Talk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Talk.swift; sourceTree = "<group>"; };
 		5082C07A292E6FDA00ADB865 /* TalksCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalksCard.swift; sourceTree = "<group>"; };
@@ -105,9 +111,18 @@
 			path = Commons;
 			sourceTree = "<group>";
 		};
+		507CD71929383C1900A9661B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				507CD71A29383C2600A9661B /* Filter.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		5082BBFB292CE35C00ADB865 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				507CD71929383C1900A9661B /* Protocols */,
 				507CD7082937F03700A9661B /* Commons */,
 				5082BC05292CF3CF00ADB865 /* Extensions */,
 				5082BC04292CF3BC00ADB865 /* Tokens */,
@@ -202,12 +217,14 @@
 			isa = PBXGroup;
 			children = (
 				5082BC24292DD85B00ADB865 /* Deadline.swift */,
-				5082C074292E6F4200ADB865 /* Filter.swift */,
+				5082C074292E6F4200ADB865 /* DeadlineFilter.swift */,
 				5082C078292E6FB200ADB865 /* Talk.swift */,
 				4E68ECA5292EBEC1004B64D5 /* User.swift */,
 				507CD711293812B000A9661B /* MessageMedia.swift */,
 				507CD713293812CE00A9661B /* Message.swift */,
 				507CD717293837D900A9661B /* Suggestion.swift */,
+				507CD71C29383C6900A9661B /* FeedbackFilter.swift */,
+				507CD71E293845F100A9661B /* Feedback.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -334,10 +351,11 @@
 				5082BC09292CF41700ADB865 /* Color+Token.swift in Sources */,
 				4E68ECA8292EBF0B004B64D5 /* TeamSectionView+Builders.swift in Sources */,
 				507CD70A2937F04500A9661B /* RectCorner.swift in Sources */,
-				5082C075292E6F4200ADB865 /* Filter.swift in Sources */,
+				5082C075292E6F4200ADB865 /* DeadlineFilter.swift in Sources */,
 				5082BC07292CF3DF00ADB865 /* CGFloat+Metrics.swift in Sources */,
 				4E68ECA6292EBEC1004B64D5 /* User.swift in Sources */,
 				507CD714293812CE00A9661B /* Message.swift in Sources */,
+				507CD71F293845F100A9661B /* Feedback.swift in Sources */,
 				5082C079292E6FB200ADB865 /* Talk.swift in Sources */,
 				5082BC03292CF39200ADB865 /* ContentSectionButton.swift in Sources */,
 				5082BC01292CF35700ADB865 /* ContentSideBar.swift in Sources */,
@@ -345,6 +363,7 @@
 				5082BC22292DD80500ADB865 /* OwnSectionView+Builders.swift in Sources */,
 				507CD7072937D68B00A9661B /* Date+MonthName.swift in Sources */,
 				5082BBFF292CE3F600ADB865 /* DesignTokens.swift in Sources */,
+				507CD71D29383C6900A9661B /* FeedbackFilter.swift in Sources */,
 				5082BC2B292DD8C300ADB865 /* DefaultButton.swift in Sources */,
 				507CD70C2937F06800A9661B /* View+CornerRadius.swift in Sources */,
 				50B7A79628D290E1003924B5 /* TCCAppApp.swift in Sources */,
@@ -352,6 +371,7 @@
 				5082BC19292DA1F000ADB865 /* TalksSectionView.swift in Sources */,
 				507CD712293812B000A9661B /* MessageMedia.swift in Sources */,
 				5082BC20292DA27500ADB865 /* ContentView+Builders.swift in Sources */,
+				507CD71B29383C2600A9661B /* Filter.swift in Sources */,
 				5082C07D292E700900ADB865 /* TalksSectionViewModel.swift in Sources */,
 				5082C077292E6F6400ADB865 /* FilterButton.swift in Sources */,
 				507CD7102937F20400A9661B /* TalksSectionView+Builders.swift in Sources */,

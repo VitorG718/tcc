@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct FilterButton: View {
-    let filter: Filter
+struct FilterButton<T: Filter>: View {
+    let filter: T
     let proxy: GeometryProxy
-    var handler: (_ filter: Filter, _ selected: Bool) -> Void = { (_, _) in }
+    var handler: (_ filter: T, _ selected: Bool) -> Void = { (_, _) in }
     @State private var selected = false
     
     var body: some View {
@@ -26,8 +26,8 @@ struct FilterButton: View {
                         weight: .regular
                     ))
                     .foregroundColor(.white)
-                    .padding(.vertical, 10)
-                    .padding(.horizontal, 15)
+                    .padding(.vertical, .height(10, in: proxy, min: 5))
+                    .padding(.horizontal, .width(15, in: proxy, min: 7))
             }
         )
         .buttonStyle(.borderless)

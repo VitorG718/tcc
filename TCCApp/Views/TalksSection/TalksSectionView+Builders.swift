@@ -42,7 +42,7 @@ extension TalksSectionView {
     func createFiltersCarousel() -> some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: .width(17, in: proxy, min: 10)) {
-                ForEach(Filter.filters) { filter in
+                ForEach(DeadlineFilter.filters) { filter in
                     FilterButton(
                         filter: filter, proxy: proxy,
                         handler: { filter, selected in

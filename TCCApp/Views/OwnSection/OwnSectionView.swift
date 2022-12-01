@@ -32,6 +32,7 @@ struct OwnSectionView: View {
                     
                     VStack(spacing: .height(23, in: proxy, min: 12)) {
                         createSuggestionsCarousel()
+                        createFeedbacksArea()
                     }
                     
                     Spacer()
